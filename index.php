@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
@@ -17,61 +20,78 @@
       <!-- d-flex align-items-center justify-content-between flex-wrap position-relative -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-white bg-white shadow-sm" >
   <div class="container-fluid ">
-    <div class="px-3">
+    <div class="px-4 ">
         <a class="navbar-brand" href="#">
-        <img src="img/logo_ce.png" alt="" width="120" height="40" class="d-inline-block align-text-top">
+        <img src="img/logo_ce.png" alt="" width="150" height="50" class="d-inline-block align-text-top">
         </a>
     </div>
     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" >
+      <i class="one-icon fas fa-bars" style="color:#348A0C; font-size:32px;"></i>
+     
+      </span>
     </button>
-    <div class="collapse navbar-collapse "  id="navbarNav">
-      <ul class="navbar-nav m-auto " >
-        <div class=" px-1">
+
+
+    <div class="collapse navbar-collapse py-3"  id="navbarNav">
+      <ul class="navbar-nav  m-auto ">
+          <div class=" px-2">
+                <li class="nav-item">
+                <a class="nav-link" style="color: #348A0C;" href="#home">Home</a>
+                </li>
+            </div>
+        <div class=" px-2">
             <li class="nav-item">
-            <a class="nav-link" style="color: #348A0C;" href="#">Sejarah</a>
+            <a class="nav-link" style="color: #348A0C;" href="#sejarah">Sejarah</a>
             </li>
         </div>
 
-        <div class="  px-1">
+        <div class="  px-2">
             <li class="nav-item">
-            <a class="nav-link" style="color: #348A0C;" href="#">Divisi</a>
+            <a class="nav-link" style="color: #348A0C;" href="#divisi">Divisi</a>
             </li>
         </div>
 
-        <div class=" px-1">
+        <div class=" px-2">
             <li class="nav-item">
-            <a class="nav-link" style="color: #348A0C;" href="#">Pengurus</a>
+            <a class="nav-link" style="color: #348A0C;" href="#pengurus">Pengurus</a>
             </li>
         </div>
 
-        <div class=" px-1">
+        <div class=" px-2">
             <li class="nav-item">
-            <a class="nav-link" style="color: #348A0C;"  href="#">Galeri</a>
+            <a class="nav-link" style="color: #348A0C;"  href="#galeri">Galeri</a>
             </li>
         </div>
 
-        <div class="px-1">
+        <div class="px-2">
         <li class="nav-item ">
-          <a class="nav-link" style="color: #348A0C;" href="#">Artikel</a>
+          <a class="nav-link" style="color: #348A0C;" href="#artikel">Artikel</a>
         </li>
         </div>
+        <div class="px-5">
 
-        <a class="btn btn-outline-success " href="masuk.php"type="submit">Masuk</a>
-   
+        </div>
+        <a class="btn btn-outline-success my-1" href="masuk.php"type="submit">Masuk</a>
+       
+        <a class="btn btn-success mx-3 my-1" href="#"type="submit">Daftar</a>
+
       </ul> 
 
+      
     </div>
   </div>
 </nav>
 
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0" >
+
  <!-- banner-navbar -->
-<div  style="height: 720px;">
+<div  style="height: 720px;" id="home">
 <br>
 <br>
 <div class="row mt-5 align-items-center">
     <div class="col m-2">
-    <p style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
+    <p style="font-family : Poppins; font-size: 30px; color: #348A0C; " >
     Unit Kegiatan Mahasiswa
     </p>
     <p style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
@@ -96,8 +116,8 @@
 
 
 
-<div class ="bg-light"style="height: 600px;">
-<p class= "m-2" style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
+<div class ="bg-light "  style="height: 600px;" id="sejarah">
+<p class= "m-2"  style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
  Sejarah
 </p>
 <div class="row mt-5 ">
@@ -124,7 +144,7 @@
 </div>
 
 <div style="height: 720px;">
-<p class= "m-2" style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
+<p class= "m-2" id="divisi" style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
  Divisi
 </p>
 <p class= "m-2">
@@ -157,8 +177,8 @@
 </div>
 
 
-<div class ="bg-light"style="height: 1200px;">
-<p class= "m-2" style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
+<div class ="bg-light"style="height: 1200px;" id="pengurus">
+<p class= "m-2"  style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
 Pengurus
 </p>
 <p class= "m-2 text-center">
@@ -181,8 +201,8 @@ Pengurus
   </div >
 
 
-  <div  style="height: 700px;">
-  <p class= "m-2" style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
+  <div  style="height: 700px;" id="galeri">
+  <p class= "m-2"  style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
     Galeri
   </p>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -208,8 +228,8 @@ Pengurus
     </div>
 </div>
 
-    <div class ="bg-light" style="height: 1400px;">
-    <p class= "m-2" style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
+    <div class ="bg-light" style="height: 1400px;" id="artikel">
+    <p class= "m-2"  style="font-family : Poppins; font-size: 30px; color: #348A0C; ">
     Artikel
     </p>
   <div class="row row-cols-1 row-cols-md-3 g-4 m-2">
@@ -278,7 +298,7 @@ Pengurus
     </div>  
 </div>
 </div>
-
+</div>
 
 
 <!-- footer -->

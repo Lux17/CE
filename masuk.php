@@ -29,21 +29,21 @@
   <div class="card-body">
     <h1 class="card-title" style="color: #348A0C;">Masuk Akun</h1>
     <p class="card-text" style="color: #348A0C;">Silahkan  masuk ke akunmu.</p>
-    <form>
+    <form method="POST"  action="login_action.php">
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="InputEmail" class="form-label">Username</label>
+            <input type="username" class="form-control" id="username" name="username" >
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <label for="exampleInputPassword1" class="form-label" >Password</label>
+            <input type="password" class="form-control" id="password" aria-describedby="passwordHelpInline" name="password">
         </div>
         <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">ingat saya</label>
         </div>
         <div class="d-grid mx-auto">
-            <button class="btn btn-large btn-block btn-success" type="button">Masuk</button>
+            <button class="btn btn-large btn-block btn-success tombol" type="submit" value="login">Masuk</button>
         </div>
     </form>
     
@@ -61,6 +61,18 @@
     min-height: 100%;
     padding: 20px;
 " -->
+<?php
+
+				if(isset($_GET['pesan'])){
+	        if($_GET['pesan'] == "gagal"){
+		       echo "Login gagal! username dan password salah!";
+	        }else if($_GET['pesan'] == "logout"){
+		       echo "Anda telah berhasil logout";
+	        }else if($_GET['pesan'] == "belum_login"){
+		       echo "Anda harus login untuk mengakses dashboard";
+	        }
+        }
+				?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
